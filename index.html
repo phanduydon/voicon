@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .heading {
+            width: 100%;
+            height: 60px;
+            background-color: #333;
+            opacity: 0.8;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            text-transform: uppercase;
+        }
+        
+        .name-list {
+            margin-top: 60px;
+        }
+        
+        h2 {
+            color: rgb(255, 255, 255);
+            line-height: 60px;
+            display: inline-block;
+            margin: 0px;
+        }
+        
+        #list-courses {
+            background-color: rgb(132, 134, 134);
+        }
+        
+        #list-courses>li {
+            height: 100px;
+            text-align: center;
+        }
+        
+        #list-courses>li>h4 {
+            color: rgb(45, 38, 148);
+        }
+        
+        .input {
+            width: 100%;
+            display: block;
+            padding: 4px;
+            color: beige;
+            opacity: 0.8;
+        }
+        
+        .confirm {
+            padding-top: 4px;
+            color: azure;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .confirm>button {
+            display: inline-block;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        input[type='text'] {
+            display: block;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .foot {
+            background-color: rgb(31, 34, 32);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h2>Danh sách khóa học</h2>
+    </div>
+    <div class="name-list">
+        <ul id="list-courses"></ul>
+    </div>
+    <div class="foot">
+        <div id="name-input">
+            <label class="input" for="">Name</label>
+            <input type="text" name="name">
+        </div>
+        <div id="description-input">
+            <label class="input" for="">Description</label>
+            <input type="text" name="description">
+        </div>
+        <div class="confirm">
+            <button id="create">Create</button>
+            <button id="update">update</button>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
